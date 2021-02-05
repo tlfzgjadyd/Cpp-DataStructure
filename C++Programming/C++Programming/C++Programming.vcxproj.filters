@@ -33,5 +33,20 @@
     <ClCompile Include="D_star.cpp">
       <Filter>소스 파일\chap01</Filter>
     </ClCompile>
+    <ClCompile Include="A_count.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="B_cout2.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="D_biggest.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="C_bigger.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="E_nums.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
