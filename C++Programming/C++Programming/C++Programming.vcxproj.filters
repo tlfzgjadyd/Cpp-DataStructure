@@ -48,5 +48,23 @@
     <ClCompile Include="E_nums.cpp">
       <Filter>소스 파일\chap02</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\C++Programming\K_change.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\C++Programming\F_stringSame.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\C++Programming\G_yes.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\C++Programming\H_names.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\C++Programming\I_information.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\C++Programming\J_string.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
