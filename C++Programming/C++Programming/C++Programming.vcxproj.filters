@@ -66,5 +66,17 @@
     <ClCompile Include="..\..\..\Desktop\C++Programming\J_string.cpp">
       <Filter>소스 파일\chap02</Filter>
     </ClCompile>
+    <ClCompile Include="L_change.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="M_menu.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="N_coffee.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="O_calculate.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
