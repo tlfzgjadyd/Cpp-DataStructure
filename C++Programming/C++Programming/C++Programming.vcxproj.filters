@@ -19,6 +19,12 @@
     <Filter Include="소스 파일\chap02">
       <UniqueIdentifier>{7ca7b304-3822-4862-85a3-82d665404b75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap03">
+      <UniqueIdentifier>{052baf4f-584e-4028-a32a-311f0d7ea302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\chap03">
+      <UniqueIdentifier>{1963a650-8852-4d13-9faf-3a2c0febf880}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -78,5 +84,40 @@
     <ClCompile Include="O_calculate.cpp">
       <Filter>소스 파일\chap02</Filter>
     </ClCompile>
+    <ClCompile Include="P_alphabet.cpp">
+      <Filter>소스 파일\chap02</Filter>
+    </ClCompile>
+    <ClCompile Include="A_Tower.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Date.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Account.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="D_CoffeeMachine.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="E_Random.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="A_Tower.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Date.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Account.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="D_CoffeeMachine.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="E_Random.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
