@@ -102,6 +102,18 @@
     <ClCompile Include="E_Random.cpp">
       <Filter>소스 파일\chap03</Filter>
     </ClCompile>
+    <ClCompile Include="F_EvenRandom.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="G_SelectableRandom.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="H_Integer.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
+    <ClCompile Include="I_Oval.cpp">
+      <Filter>소스 파일\chap03</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
@@ -117,6 +129,18 @@
       <Filter>헤더 파일\chap03</Filter>
     </ClInclude>
     <ClInclude Include="E_Random.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="F_EvenRandom.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="G_SelectableRandom.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="H_Integer.h">
+      <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="I_Oval.h">
       <Filter>헤더 파일\chap03</Filter>
     </ClInclude>
   </ItemGroup>

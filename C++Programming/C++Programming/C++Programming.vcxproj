@@ -76,7 +76,19 @@
     <ClCompile Include="E_nums.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="E_Random.cpp" />
+    <ClCompile Include="E_Random.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="F_EvenRandom.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="G_SelectableRandom.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="H_Integer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="I_Oval.cpp" />
     <ClCompile Include="L_change.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -99,6 +111,10 @@
     <ClInclude Include="C_Account.h" />
     <ClInclude Include="D_CoffeeMachine.h" />
     <ClInclude Include="E_Random.h" />
+    <ClInclude Include="F_EvenRandom.h" />
+    <ClInclude Include="G_SelectableRandom.h" />
+    <ClInclude Include="H_Integer.h" />
+    <ClInclude Include="I_Oval.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
