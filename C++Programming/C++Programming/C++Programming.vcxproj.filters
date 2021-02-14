@@ -28,6 +28,12 @@
     <Filter Include="헤더 파일\chap03\J_Calculate">
       <UniqueIdentifier>{d828e9d2-db9d-440f-a74a-4d0b24610239}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap04">
+      <UniqueIdentifier>{587badef-03fb-444a-96d3-445a663fa073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\chap04">
+      <UniqueIdentifier>{05ba92c9-d76b-4b8f-85e9-c26cb91f3021}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -132,6 +138,21 @@
     <ClCompile Include="L_Main.cpp">
       <Filter>소스 파일\chap03</Filter>
     </ClCompile>
+    <ClCompile Include="A_Color.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Average.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="C_String.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="C_String2.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="D_Sample.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
@@ -181,6 +202,12 @@
     </ClInclude>
     <ClInclude Include="L_Ram.h">
       <Filter>헤더 파일\chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="A_Color.h">
+      <Filter>헤더 파일\chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="D_Sample.h">
+      <Filter>헤더 파일\chap04</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
