@@ -153,6 +153,21 @@
     <ClCompile Include="D_Sample.cpp">
       <Filter>소스 파일\chap04</Filter>
     </ClCompile>
+    <ClCompile Include="E_StringAlter.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="F_Reverse.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="G_Circle.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="H_CircleChange.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="I_Person.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
@@ -207,6 +222,15 @@
       <Filter>헤더 파일\chap04</Filter>
     </ClInclude>
     <ClInclude Include="D_Sample.h">
+      <Filter>헤더 파일\chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="G_Circle.h">
+      <Filter>헤더 파일\chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="H_CircleChange.h">
+      <Filter>헤더 파일\chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="I_Person.h">
       <Filter>헤더 파일\chap04</Filter>
     </ClInclude>
   </ItemGroup>
