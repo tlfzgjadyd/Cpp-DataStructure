@@ -34,6 +34,9 @@
     <Filter Include="헤더 파일\chap04">
       <UniqueIdentifier>{05ba92c9-d76b-4b8f-85e9-c26cb91f3021}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap05">
+      <UniqueIdentifier>{1bfc4f4b-e4db-4176-b71f-6434529866ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -166,6 +169,21 @@
       <Filter>소스 파일\chap04</Filter>
     </ClCompile>
     <ClCompile Include="I_Person.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="J_Family.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="K_Coffee.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="L_CircleManager.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="M_Histogram.cpp">
+      <Filter>소스 파일\chap04</Filter>
+    </ClCompile>
+    <ClCompile Include="N_GamblingGame.cpp">
       <Filter>소스 파일\chap04</Filter>
     </ClCompile>
   </ItemGroup>
