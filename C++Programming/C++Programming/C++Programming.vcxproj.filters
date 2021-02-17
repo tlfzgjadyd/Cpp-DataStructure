@@ -186,6 +186,18 @@
     <ClCompile Include="N_GamblingGame.cpp">
       <Filter>소스 파일\chap04</Filter>
     </ClCompile>
+    <ClCompile Include="A_swap.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="B_half.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="C_combine.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="D_bigger.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
