@@ -198,6 +198,15 @@
     <ClCompile Include="D_bigger.cpp">
       <Filter>소스 파일\chap05</Filter>
     </ClCompile>
+    <ClCompile Include="E_Circle.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="F_find.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="G_MyIntStack.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
