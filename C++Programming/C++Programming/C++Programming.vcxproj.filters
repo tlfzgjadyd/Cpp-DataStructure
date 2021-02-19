@@ -207,6 +207,15 @@
     <ClCompile Include="G_MyIntStack.cpp">
       <Filter>소스 파일\chap05</Filter>
     </ClCompile>
+    <ClCompile Include="H_MyIntStack2.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="I_Accumulator.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="J_Buffer.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
