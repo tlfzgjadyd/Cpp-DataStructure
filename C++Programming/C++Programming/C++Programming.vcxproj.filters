@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\chap05">
       <UniqueIdentifier>{1bfc4f4b-e4db-4176-b71f-6434529866ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap06">
+      <UniqueIdentifier>{9d90ecc9-65fb-4f7e-aab4-9798a4adc853}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -214,6 +217,12 @@
       <Filter>소스 파일\chap05</Filter>
     </ClCompile>
     <ClCompile Include="J_Buffer.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="K_Book.cpp">
+      <Filter>소스 파일\chap05</Filter>
+    </ClCompile>
+    <ClCompile Include="L_Dept.cpp">
       <Filter>소스 파일\chap05</Filter>
     </ClCompile>
   </ItemGroup>
