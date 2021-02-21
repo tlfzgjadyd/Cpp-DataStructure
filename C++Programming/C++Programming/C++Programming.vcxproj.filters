@@ -225,6 +225,24 @@
     <ClCompile Include="L_Dept.cpp">
       <Filter>소스 파일\chap05</Filter>
     </ClCompile>
+    <ClCompile Include="A_add.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Person.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="C_big.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="D_MyVector.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Person2.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="C_big2.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
