@@ -243,6 +243,21 @@
     <ClCompile Include="C_big2.cpp">
       <Filter>소스 파일\chap06</Filter>
     </ClCompile>
+    <ClCompile Include="E_ArrayUtility.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="F_ArrayUtility2.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="G_Random.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="H_Trace.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="I_Board.cpp">
+      <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
