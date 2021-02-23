@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\chap06">
       <UniqueIdentifier>{9d90ecc9-65fb-4f7e-aab4-9798a4adc853}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap07">
+      <UniqueIdentifier>{ef3c3826-6d70-4d4e-af75-130586b8686a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -257,6 +260,21 @@
     </ClCompile>
     <ClCompile Include="I_Board.cpp">
       <Filter>소스 파일\chap06</Filter>
+    </ClCompile>
+    <ClCompile Include="A_Book.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Book.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Book2.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="D_Book4.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Book3.cpp">
+      <Filter>소스 파일\chap07</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
