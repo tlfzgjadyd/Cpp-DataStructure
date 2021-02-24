@@ -276,6 +276,15 @@
     <ClCompile Include="C_Book3.cpp">
       <Filter>소스 파일\chap07</Filter>
     </ClCompile>
+    <ClCompile Include="E_Color.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="F_Matrix.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="F_Matrix2.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
