@@ -285,6 +285,12 @@
     <ClCompile Include="F_Matrix2.cpp">
       <Filter>소스 파일\chap07</Filter>
     </ClCompile>
+    <ClCompile Include="G_Matrix3.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="H_Matrix4.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
