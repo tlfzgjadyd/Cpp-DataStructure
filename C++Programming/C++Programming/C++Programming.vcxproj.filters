@@ -291,6 +291,9 @@
     <ClCompile Include="H_Matrix4.cpp">
       <Filter>소스 파일\chap07</Filter>
     </ClCompile>
+    <ClCompile Include="I_Circle.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
