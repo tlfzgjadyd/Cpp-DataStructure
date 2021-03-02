@@ -297,6 +297,9 @@
     <ClCompile Include="J_Statistics.cpp">
       <Filter>소스 파일\chap07</Filter>
     </ClCompile>
+    <ClCompile Include="K_Stack.cpp">
+      <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
