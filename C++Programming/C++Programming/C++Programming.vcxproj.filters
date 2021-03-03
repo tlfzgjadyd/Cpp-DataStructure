@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\chap07">
       <UniqueIdentifier>{ef3c3826-6d70-4d4e-af75-130586b8686a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap08">
+      <UniqueIdentifier>{39cd9307-5c0e-4244-bd5b-27524ce896ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -302,6 +305,9 @@
     </ClCompile>
     <ClCompile Include="L_SortedArray.cpp">
       <Filter>소스 파일\chap07</Filter>
+    </ClCompile>
+    <ClCompile Include="NamedCircle.cpp">
+      <Filter>소스 파일\chap08</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
