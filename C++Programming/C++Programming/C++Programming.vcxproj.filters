@@ -306,7 +306,10 @@
     <ClCompile Include="L_SortedArray.cpp">
       <Filter>소스 파일\chap07</Filter>
     </ClCompile>
-    <ClCompile Include="NamedCircle.cpp">
+    <ClCompile Include="B_NamedCirclePizza.cpp">
+      <Filter>소스 파일\chap08</Filter>
+    </ClCompile>
+    <ClCompile Include="A_NamedCircle.cpp">
       <Filter>소스 파일\chap08</Filter>
     </ClCompile>
   </ItemGroup>
