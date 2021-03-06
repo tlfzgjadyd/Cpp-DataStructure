@@ -315,6 +315,9 @@
     <ClCompile Include="C_Point.cpp">
       <Filter>소스 파일\chap08</Filter>
     </ClCompile>
+    <ClCompile Include="D_ColorPoint.cpp">
+      <Filter>소스 파일\chap08</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
