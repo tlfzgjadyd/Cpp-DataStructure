@@ -327,6 +327,9 @@
     <ClCompile Include="G_RomRam.cpp">
       <Filter>소스 파일\chap08</Filter>
     </ClCompile>
+    <ClCompile Include="H_Printer.cpp">
+      <Filter>소스 파일\chap08</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
