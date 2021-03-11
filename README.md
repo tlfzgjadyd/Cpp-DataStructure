@@ -1,2 +1,2 @@
-# DataStructure-Cpp
-C++자료구조
+# Cpp
+C++
