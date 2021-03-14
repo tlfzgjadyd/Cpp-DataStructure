@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\chap08">
       <UniqueIdentifier>{39cd9307-5c0e-4244-bd5b-27524ce896ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chap09">
+      <UniqueIdentifier>{9ba2ae2b-3ae7-4c17-a897-986abaf5eb11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -332,6 +335,9 @@
     </ClCompile>
     <ClCompile Include="I_Airplane.cpp">
       <Filter>소스 파일\chap08</Filter>
+    </ClCompile>
+    <ClCompile Include="A_virtual.cpp">
+      <Filter>소스 파일\chap09</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
