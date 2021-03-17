@@ -49,6 +49,9 @@
     <Filter Include="소스 파일\chap09">
       <UniqueIdentifier>{9ba2ae2b-3ae7-4c17-a897-986abaf5eb11}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\실습">
+      <UniqueIdentifier>{bc2b4f9f-a13b-4eab-be5f-06e73582094a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -341,6 +344,9 @@
     </ClCompile>
     <ClCompile Include="B_Converter.cpp">
       <Filter>소스 파일\chap09</Filter>
+    </ClCompile>
+    <ClCompile Include="A_timeCheck.cpp">
+      <Filter>소스 파일\실습</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
