@@ -348,6 +348,9 @@
     <ClCompile Include="A_timeCheck.cpp">
       <Filter>소스 파일\실습</Filter>
     </ClCompile>
+    <ClCompile Include="B_smallTimeCheck.cpp">
+      <Filter>소스 파일\실습</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">

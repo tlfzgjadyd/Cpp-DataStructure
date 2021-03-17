@@ -1,4 +1,4 @@
-﻿  A_timeCheck.cpp
-C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\A_timeCheck.cpp(9,14): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\A_timeCheck.cpp(19,12): warning C4244: '=': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  B_smallTimeCheck.cpp
+C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\B_smallTimeCheck.cpp(15,5): warning C4552: '*': 식의 결과가 사용되지 않습니다.
+C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\B_smallTimeCheck.cpp(33,4): warning C4552: '*': 식의 결과가 사용되지 않습니다.
   C++Programming.vcxproj -> C:\Users\tlfzg\DataStructure-Cpp\C++Programming\x64\Debug\C++Programming.exe
