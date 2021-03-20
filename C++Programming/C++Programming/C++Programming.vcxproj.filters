@@ -351,6 +351,9 @@
     <ClCompile Include="B_smallTimeCheck.cpp">
       <Filter>소스 파일\실습</Filter>
     </ClCompile>
+    <ClCompile Include="C_kmToMile.cpp">
+      <Filter>소스 파일\chap09</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
