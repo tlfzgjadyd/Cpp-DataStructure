@@ -354,6 +354,9 @@
     <ClCompile Include="C_kmToMile.cpp">
       <Filter>소스 파일\chap09</Filter>
     </ClCompile>
+    <ClCompile Include="D_LoopAdder.cpp">
+      <Filter>소스 파일\chap09</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
