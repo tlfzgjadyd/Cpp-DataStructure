@@ -357,6 +357,12 @@
     <ClCompile Include="D_LoopAdder.cpp">
       <Filter>소스 파일\chap09</Filter>
     </ClCompile>
+    <ClCompile Include="E_WhileLoopAdder.cpp">
+      <Filter>소스 파일\chap09</Filter>
+    </ClCompile>
+    <ClCompile Include="C_rect.cpp">
+      <Filter>소스 파일\실습</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
