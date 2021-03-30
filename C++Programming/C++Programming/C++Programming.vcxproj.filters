@@ -366,6 +366,9 @@
     <ClCompile Include="D_WhileLoopAdder.cpp">
       <Filter>소스 파일\chap09</Filter>
     </ClCompile>
+    <ClCompile Include="D_List.cpp">
+      <Filter>소스 파일\과제</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
