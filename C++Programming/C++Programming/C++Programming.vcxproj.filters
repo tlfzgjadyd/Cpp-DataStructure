@@ -55,6 +55,9 @@
     <Filter Include="소스 파일\실습">
       <UniqueIdentifier>{6b5728e6-fe5d-4367-8454-d1fb6e724ee9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\과제">
+      <UniqueIdentifier>{b922d959-005a-43aa-8da2-a92667d5d75d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -433,6 +436,12 @@
     </ClInclude>
     <ClInclude Include="I_Person.h">
       <Filter>헤더 파일\chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderedList.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>헤더 파일\과제</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

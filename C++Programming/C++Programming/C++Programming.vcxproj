@@ -154,7 +154,9 @@
     <ClCompile Include="C_LoopAdder.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="D_List.cpp" />
+    <ClCompile Include="D_List.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="D_MyVector.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -349,8 +351,10 @@
     <ClInclude Include="I_Person.h" />
     <ClInclude Include="J_Calculate.h" />
     <ClInclude Include="K_Box.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="L_Ram.h" />
     <ClInclude Include="Mul.h" />
+    <ClInclude Include="OrderedList.h" />
     <ClInclude Include="Sub.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
