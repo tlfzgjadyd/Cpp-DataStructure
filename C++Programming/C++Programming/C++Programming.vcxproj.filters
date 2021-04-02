@@ -372,6 +372,9 @@
     <ClCompile Include="D_List.cpp">
       <Filter>소스 파일\과제</Filter>
     </ClCompile>
+    <ClCompile Include="E_StackAndQueue.cpp">
+      <Filter>소스 파일\과제</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
