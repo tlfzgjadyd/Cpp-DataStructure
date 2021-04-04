@@ -2,14 +2,26 @@
 using namespace std;
 class Stack {
 private:
-public:
 
+public:
+	Stack() {
+
+	}
+	~Stack() {
+
+	}
 };
 class Queue {
 private:
 public:
+	Queue(){
 
+	}
+	~Queue(){
+
+	}
 };
 int main(void) {
-
+	Stack s;
+	Queue q;
 }
