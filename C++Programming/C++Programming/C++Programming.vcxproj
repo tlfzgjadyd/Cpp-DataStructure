@@ -184,7 +184,7 @@
     <ClCompile Include="E_Random.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="E_StackAndQueue.cpp" />
+    <ClCompile Include="E_String.cpp" />
     <ClCompile Include="E_StringAlter.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
