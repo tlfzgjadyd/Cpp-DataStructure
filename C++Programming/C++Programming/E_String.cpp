@@ -1,28 +1,114 @@
-class String{private:	char* buffer;	int length;	int size;	String();	String(int m);public:	String(char* init, int m); //길이 m인 스트링 init으로 초기화	// Constructor that initializes *this to string init of length m.	bool operator==(String t);//동일한지 비교	// If the string represented by *this equals t, return true;	// else return false.	bool operator!();//공백이면 true 아니면 false	// If *this is empty then return true; else return false.	int Length();//문자수를 반환	// Return the number of characters in *this.	String Concat(String t);//연결된 스트링을 반환	// Return a string whose elements are those of *this followed by those of t.	String Substr(int i, int j);//i~j 사이의 스트링을 반환	// Return a string containing the j characters of *this at positions i, i+1, ...,	// i+j-1 if these are valid positions of *this; otherwise, throw an exception.	int Find(String pat);//스트링에서 pat 스트링을 찾아서 위치 반환, 없으면 -1	// Return an index i such that pat matches the substring of *this that begins	// at position i. Return -1 if pat is either empty or not a substring of *this.	int FastFind(String pat);	void FailureFunction();};int String::Find(String pat){// Return -1 if pat does not occur in *this;// otherwise return the first position in *this, where pat begins.	for (int start = 0; start <= Length() - pat.Length(); start++)	{// check for match beginning at str[start]		int j;		for (j = 0; j < pat.Length() && str[start + j] == pat.str[j]; j++)			if (j == pat.Length()) return start; // match found			// no match at position start	}	return -1; // pat is empty or does not occur in s}int String::FastFind(String pat)
-{// Determine if pat is a substring of s.
+#include "String.h"
+String::String():String(10){}
+String::String(String& s): String(s.length + 1)
+{
+	for (int i = 0; i < s.length; i++)
+		buffer[i] = s.buffer[i];
+	buffer[s.length] = '\0';
+	length = s.length;
+
+	printf("A	");
+	print();
+	printf("	\n");
+}
+String::String(int m)
+{
+	size = m;
+	buffer = new char[m];
+	length = 0;
+	printf("C	");
+	print();
+	printf("	\n");
+}
+String::String(char* init, int m) : String(m+1) //<---cat3
+{
+	for (int i = 0; i < m; i++)
+		buffer[i] = init[i];
+	buffer[m] = '\0';
+	length = m;
+}
+String::~String()
+{
+	printf("B	");
+	print();
+	printf("	\n");
+	delete[] buffer;
+}
+String String::Concat(String t)//t=b;
+{
+	String result(length + t.length + 1);
+
+	for (int i = 0; i < length; i++)
+		result.buffer[i] = buffer[i];
+	for (int i = 0; i < t.length; i++)
+		result.buffer[length + i] = t.buffer[i];
+
+	result.buffer[length + t.length] = '\0';
+	result.length = length + t.length;
+
+	return result;
+}
+bool String::operator!() {
+	if (this->length == 0)
+		return true;
+	else
+		return false;
+}
+String& String::operator=(const String& s)
+{
+	delete[] buffer;
+	length = s.length;
+	size = s.size;
+	buffer = new char[length+1];
+	for (int i = 0; i < length; i++)
+		buffer[i] = s.buffer[i];
+	buffer[length] = '\0';
+
+
+	return *this;
+}
+bool String::operator==(String t) {
+	int bigger = max(this->length, t.length);
+	bool flag = true;
+	for (int i = 0; i < bigger; i++) {
+		if (buffer[i] != t.buffer[i])
+		{
+			flag = false;
+			break;
+		}
+	}
+	return flag;
+}
+int String::Length() {
+	return length;
+}
+String String::Substr(int i, int j){
+	String result(j-i+1);
+
+	for (int index = i; index < j; index++)
+		result.buffer[index]=(buffer[index]);
+	result.buffer[j - i] = '\0';
+	result.length = j - i;
+
+	return result;
+}
+int String::Find(String pat)
+{
 	int posP = 0, posS = 0;
 	int lengthP = pat.Length(), lengthS = Length();
 	while ((posP < lengthP) && (posS < lengthS))
-		if (pat.str[posP] == str[posS]) { // character match
+		if (pat.buffer[posP] == buffer[posS]) { //일치
 			posP++; posS++;
 		}
 		else
 			if (posP == 0)
 				posS++;
-			else posP = pat.f[posP - 1] + 1;
+			else posP = pat.buffer[posP - 1] + 1;
 	if (posP < lengthP) return -1;
 	else return posS - lengthP;
 }
-void String::FailureFunction()
-{// Compute the failure function for the pattern *this.
-	int lengthP = Length();
-	f[0] = -1;
-	for (int j = 1; j < lengthP; j++)  // compute f[j]
-	{
-		int i = f[j - 1];
-		while ((*(str + j) != *(str + i + 1)) && (i >= 0)) i = f[i];
-		if (*(str + j) == *(str + i + 1))
-			f[j] = i + 1;
-		else f[j] = -1;
-	}
+void String::print() {
+	for(int i=0;i<length;i++)
+		cout << buffer[i];
+	cout << endl;
 }

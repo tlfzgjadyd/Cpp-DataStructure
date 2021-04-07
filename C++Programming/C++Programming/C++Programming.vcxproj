@@ -175,6 +175,7 @@
     <ClCompile Include="E_Color.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="E_Main.cpp" />
     <ClCompile Include="E_MyQueue.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -356,6 +357,7 @@
     <ClInclude Include="L_Ram.h" />
     <ClInclude Include="Mul.h" />
     <ClInclude Include="OrderedList.h" />
+    <ClInclude Include="String.h" />
     <ClInclude Include="Sub.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
