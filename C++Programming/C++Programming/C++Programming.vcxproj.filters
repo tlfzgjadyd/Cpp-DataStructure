@@ -378,6 +378,9 @@
     <ClCompile Include="E_Main.cpp">
       <Filter>소스 파일\과제</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\F_StackAndQueue.cpp">
+      <Filter>소스 파일\과제</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
@@ -450,6 +453,15 @@
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
     <ClInclude Include="String.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Desktop\ChangeSize.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Desktop\Queue.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Desktop\Stack.h">
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
   </ItemGroup>

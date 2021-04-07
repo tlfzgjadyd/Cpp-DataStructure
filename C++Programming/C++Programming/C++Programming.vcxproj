@@ -37,6 +37,7 @@
     <ClCompile Include="..\..\..\Desktop\C++Programming\K_change.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\F_StackAndQueue.cpp" />
     <ClCompile Include="A_add.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -175,7 +176,9 @@
     <ClCompile Include="E_Color.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="E_Main.cpp" />
+    <ClCompile Include="E_Main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="E_MyQueue.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -185,7 +188,9 @@
     <ClCompile Include="E_Random.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="E_String.cpp" />
+    <ClCompile Include="E_String.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="E_StringAlter.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -335,6 +340,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Desktop\ChangeSize.h" />
+    <ClInclude Include="..\..\..\Desktop\Queue.h" />
+    <ClInclude Include="..\..\..\Desktop\Stack.h" />
     <ClInclude Include="Add.h" />
     <ClInclude Include="A_Color.h" />
     <ClInclude Include="A_Tower.h" />

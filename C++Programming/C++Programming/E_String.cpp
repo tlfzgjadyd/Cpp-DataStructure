@@ -6,19 +6,12 @@ String::String(String& s): String(s.length + 1)
 		buffer[i] = s.buffer[i];
 	buffer[s.length] = '\0';
 	length = s.length;
-
-	printf("A	");
-	print();
-	printf("	\n");
 }
 String::String(int m)
 {
 	size = m;
 	buffer = new char[m];
 	length = 0;
-	printf("C	");
-	print();
-	printf("	\n");
 }
 String::String(char* init, int m) : String(m+1) //<---cat3
 {
@@ -29,9 +22,6 @@ String::String(char* init, int m) : String(m+1) //<---cat3
 }
 String::~String()
 {
-	printf("B	");
-	print();
-	printf("	\n");
 	delete[] buffer;
 }
 String String::Concat(String t)//t=b;
