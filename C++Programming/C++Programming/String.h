@@ -24,4 +24,6 @@ public:
 	String Substr(int i, int j);//i~j 사이의 스트링을 반환
 	int Find(String pat);//스트링에서 pat 스트링을 찾아서 위치 반환, 없으면 -1
 	void print();//스트링 출력
+	ostream& operator<<(ostream& o);
+	char getItem(int i);
 };

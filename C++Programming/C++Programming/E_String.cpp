@@ -1,4 +1,4 @@
-#include "String.h"
+#include "E_String.h"
 String::String():String(10){}
 String::String(String& s): String(s.length + 1)
 {

@@ -37,9 +37,6 @@
     <ClCompile Include="..\..\..\Desktop\C++Programming\K_change.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\..\Desktop\F_StackAndQueue.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="A_add.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -220,9 +217,14 @@
     <ClCompile Include="F_Reverse.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="F_StackAndQueue.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="G_Calculator.cpp" />
     <ClCompile Include="G_Circle.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="G_Main.cpp" />
     <ClCompile Include="G_Matrix3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -238,6 +240,7 @@
     <ClCompile Include="G_SelectableRandom.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="G_String.cpp" />
     <ClCompile Include="H_CircleChange.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -342,18 +345,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Desktop\ChangeSize.h" />
-    <ClInclude Include="..\..\..\Desktop\Queue.h" />
-    <ClInclude Include="..\..\..\Desktop\Stack.h" />
     <ClInclude Include="Add.h" />
     <ClInclude Include="A_Color.h" />
     <ClInclude Include="A_Tower.h" />
     <ClInclude Include="B_Date.h" />
+    <ClInclude Include="Calculator.h" />
+    <ClInclude Include="ChangeSIze.h" />
     <ClInclude Include="C_Account.h" />
     <ClInclude Include="Div.h" />
     <ClInclude Include="D_CoffeeMachine.h" />
     <ClInclude Include="D_Sample.h" />
     <ClInclude Include="E_Random.h" />
+    <ClInclude Include="E_String.h" />
     <ClInclude Include="F_EvenRandom.h" />
     <ClInclude Include="G_Circle.h" />
     <ClInclude Include="G_SelectableRandom.h" />
@@ -363,10 +366,13 @@
     <ClInclude Include="I_Person.h" />
     <ClInclude Include="J_Calculate.h" />
     <ClInclude Include="K_Box.h" />
+    <ClInclude Include="D_List.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="L_Ram.h" />
     <ClInclude Include="Mul.h" />
     <ClInclude Include="OrderedList.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Stack.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="Sub.h" />
   </ItemGroup>

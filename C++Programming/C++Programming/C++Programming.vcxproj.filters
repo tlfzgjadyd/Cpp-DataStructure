@@ -378,7 +378,16 @@
     <ClCompile Include="E_Main.cpp">
       <Filter>소스 파일\과제</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Desktop\F_StackAndQueue.cpp">
+    <ClCompile Include="F_StackAndQueue.cpp">
+      <Filter>소스 파일\과제</Filter>
+    </ClCompile>
+    <ClCompile Include="G_Calculator.cpp">
+      <Filter>소스 파일\과제</Filter>
+    </ClCompile>
+    <ClCompile Include="G_Main.cpp">
+      <Filter>소스 파일\과제</Filter>
+    </ClCompile>
+    <ClCompile Include="G_String.cpp">
       <Filter>소스 파일\과제</Filter>
     </ClCompile>
   </ItemGroup>
@@ -455,13 +464,22 @@
     <ClInclude Include="String.h">
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Desktop\ChangeSize.h">
+    <ClInclude Include="ChangeSIze.h">
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Desktop\Queue.h">
+    <ClInclude Include="Queue.h">
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Desktop\Stack.h">
+    <ClInclude Include="Stack.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculator.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="D_List.h">
+      <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="E_String.h">
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
   </ItemGroup>
