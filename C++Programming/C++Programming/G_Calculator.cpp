@@ -1,6 +1,20 @@
 #include "Calculator.h"
 
 int makeTokens(const char* expr) {//들어온 수식을 토큰으로 분리
+    int length = 3;
+    bool flag = true;//true면 숫자 false면 연산자
+    for (int i = 0; i < length; i++)
+    {
+        //if(expr[i]타입을 파악한다)
+            //이전타입이 숫자였을 경우
+            //  이번타입이 숫자면
+            //          이전숫자와 합침 계속한다
+            //  이번타입이 연산자면
+            //          여태까지의 숫자를 tokens에 넣는다
+            //이전타입이 연산자였을 경우
+            //  이번타입은 당연히 숫자니까 계속해봄
+
+    }
 
 }
 int Calculator::makePostFix() {// postfix 로 변경하는 함수 : 오류없으면 0 오류있으면 1반환

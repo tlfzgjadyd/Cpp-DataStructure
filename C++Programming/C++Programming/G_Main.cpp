@@ -12,6 +12,10 @@ int main(void) {
     Calculator c;
     cout << "수식을 입력하시오 : ";
     cin.getline(expr, 1000);
+
+
+    c.setExpression(expr);
+    /*
     if (!c.setExpression(expr))
     {
         String postfix = c.getPostFix();
@@ -22,6 +26,6 @@ int main(void) {
         catch (const char* errmsg) {
             cout << errmsg << endl;
         }
-    }
+    }*/
     return 0;
 }

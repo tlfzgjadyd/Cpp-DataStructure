@@ -1,4 +1,26 @@
 #include "String.h"
+void String::DeepCopy(const char* src, int size)
+{
+
+	if (this->size > 0)
+		delete[] buffer;
+
+
+	if (size <= 0)
+	{
+		size = 0;
+		while (src[size++] != '\0');
+	}
+
+	buffer = new char[size];
+	this->size = size;
+
+	for (int i = 0; i < this->size; i++)
+	{
+		if (src[i] == '\0') length = i;
+		buffer[i] = src[i];
+	}
+}
 String::String() :String(10) {}
 String::String(String& s) : String(s.length + 1)
 {
@@ -13,13 +35,31 @@ String::String(int m)
 	buffer = new char[m];
 	length = 0;
 }
-String::String(char* init, int m) : String(m + 1) //<---cat3
+String::String(char c)
 {
-	for (int i = 0; i < m; i++)
-		buffer[i] = init[i];
-	buffer[m] = '\0';
-	length = m;
+	buffer = new char[2];
+	buffer[0] = c;
+	buffer[1] = '\0';
+	size = 2;
+	length = 1;
 }
+String::String(String& s) : String()
+{
+	DeepCopy(s.buffer, s.size);
+}
+String::String(const char* str) : String()
+{
+	DeepCopy(str);
+}
+String::String(char* str) : String((const char*)str)
+{
+
+}
+String::String(const char* init, int m) : String()
+{
+	DeepCopy(init, m);
+}
+
 String::~String()
 {
 	delete[] buffer;

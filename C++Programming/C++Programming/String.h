@@ -12,9 +12,15 @@ private:
 
 	String(int m);
 public:
+	void DeepCopy(const char* src, int size);
 	String();
 	String(String&);
 	String(char* init, int m); //길이 m인 스트링 init으로 초기화
+	String(char c);
+	String(String& s);
+	String(const char* str);
+	String(char* str);
+	String(const char* init, int m);
 	~String();
 	String Concat(String t);//연결된 스트링을 반환
 	String& operator=(const String& s);
