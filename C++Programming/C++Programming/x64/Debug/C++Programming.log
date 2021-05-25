@@ -1,2 +1,3 @@
-﻿  E_String.cpp
+﻿  G_String.cpp
+C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\G_String.cpp(50): warning C4717: 'String::String': 모든 제어 경로에서 재귀적입니다. 함수로 인해 런타임 스택 오버플로가 발생합니다.
   C++Programming.vcxproj -> C:\Users\tlfzg\DataStructure-Cpp\C++Programming\x64\Debug\C++Programming.exe

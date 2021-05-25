@@ -14,10 +14,9 @@ private:
 public:
 	void DeepCopy(const char* src, int size);
 	String();
-	String(String&);
+	String(String& s);
 	String(char* init, int m); //길이 m인 스트링 init으로 초기화
 	String(char c);
-	String(String& s);
 	String(const char* str);
 	String(char* str);
 	String(const char* init, int m);

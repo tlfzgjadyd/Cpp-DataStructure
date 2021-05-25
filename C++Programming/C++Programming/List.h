@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+using namespace std;
 template <typename T>
 class List { //(정렬되지 않은 ) 리스트
 private:
@@ -20,15 +22,14 @@ public:
 };
 template <typename T>
 List<T>::List() {
-    this->size = 5;
-    this->itemCount = 0;
-    this->items = new int[size];
+    List(5);
+    
 }
 template <typename T>
 List<T>::List(int size) {
     this->size = size;
     this->itemCount = 0;
-    this->items = new int[size];
+    this->items = new T[size];
 }
 template <typename T>
 List<T>::~List() {

@@ -13,8 +13,10 @@ int main(void) {
     cout << "수식을 입력하시오 : ";
     cin.getline(expr, 1000);
 
-
-    c.setExpression(expr);
+    //일단 분리해서 집어넣기
+    //후위표기식으로 변환하기
+    //후위표기식 계산하기
+    //c.setExpression(expr);
     /*
     if (!c.setExpression(expr))
     {

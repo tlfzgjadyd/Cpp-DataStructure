@@ -43,13 +43,10 @@ String::String(char c)
 	size = 2;
 	length = 1;
 }
-String::String(String& s) : String()
-{
-	DeepCopy(s.buffer, s.size);
-}
 String::String(const char* str) : String()
 {
-	DeepCopy(str);
+	String s(str);
+	DeepCopy(str, s.Length());
 }
 String::String(char* str) : String((const char*)str)
 {
