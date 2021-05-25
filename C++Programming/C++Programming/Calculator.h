@@ -9,7 +9,7 @@ private:
     List<String> tokens;
     int errCode;                
     int value;                    
-    String postfix;              
+    String postfix;
 
     int makeTokens(const char* expr);
     int makePostFix();         

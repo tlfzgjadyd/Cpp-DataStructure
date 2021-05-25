@@ -12,22 +12,21 @@ int main(void) {
     Calculator c;
     cout << "수식을 입력하시오 : ";
     cin.getline(expr, 1000);
-
-    //일단 분리해서 집어넣기
-    //후위표기식으로 변환하기
-    //후위표기식 계산하기
-    //c.setExpression(expr);
-    /*
+    //수식세팅, 후위로 변환, 계산까지 완료하는 함수
+    int n1 = 1;
+    int n2 = 2;
+    cout << (char)(n2 - n1 + '0');
     if (!c.setExpression(expr))
     {
+        /*
+        //여기서 변환하는게 아니라 이미 변환돼있는 후위를 가져옴
         String postfix = c.getPostFix();
-        try {
+        try {//여기서 결과값 계산하는게 아니라 이미 계산돼있는 결과값을 가져옴
             cout << "후위표기식 : " << postfix << "결과값 : " << c.getValue() << endl;
-
         }
         catch (const char* errmsg) {
             cout << errmsg << endl;
-        }
-    }*/
+        }*/
+    }
     return 0;
 }

@@ -50,7 +50,7 @@ String::String(const char* str) : String()
 }
 String::String(char* str) : String((const char*)str)
 {
-
+	;
 }
 String::String(const char* init, int m) : String()
 {
@@ -146,7 +146,7 @@ ostream& String::operator<<(ostream& o) {
 }
 char String::getItem(int i) {
 	if (buffer[i] != NULL)
-		return buffer[i];
+		return (char)buffer[i];
 	else
 		return NULL;
 }

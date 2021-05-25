@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+
 using namespace std;
 template <typename T>
 class List { //(정렬되지 않은 ) 리스트
@@ -21,9 +22,8 @@ public:
     int getItemCount();
 };
 template <typename T>
-List<T>::List() {
-    List(5);
-    
+List<T>::List() :List(5){
+    ;
 }
 template <typename T>
 List<T>::List(int size) {
@@ -40,7 +40,7 @@ List<T>::~List() {
 }
 template <typename T>
 int List<T>::getItem(int index) {//리스트의 특정 위치에 있는 값을 가져오는 int getItem(int index) 함수 작성  ( index가 범위를 벗어날경우 -99999 반환 )
-    if (index < size && index < itemCount && items[index] != NULL)
+    if (index < size && index < itemCount && items[index]!= NULL)
         return items[index];
     else
         return -99999;
