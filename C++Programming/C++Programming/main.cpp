@@ -1,7 +1,9 @@
+#pragma once
 #include <iostream>
 #include "Chain.h"
 #include "Tree.h"
 #include "MaxHeap.h"
+#include "BST.h"
 using namespace std;
 
 int main(void) {
@@ -44,6 +46,8 @@ int main(void) {
 	maxHeap->Push((const int&)1000);
 	maxHeap->print();
 
-
+	BST<string, int>* bst = new BST<string, int>();
+	bst->Insert(make_pair("a",1));
+	
 	return 0;
 }

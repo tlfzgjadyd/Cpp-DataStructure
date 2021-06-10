@@ -355,6 +355,7 @@
     <ClInclude Include="Add.h" />
     <ClInclude Include="A_Color.h" />
     <ClInclude Include="A_Tower.h" />
+    <ClInclude Include="BST.h" />
     <ClInclude Include="B_Date.h" />
     <ClInclude Include="Calculator.h" />
     <ClInclude Include="Chain.h" />

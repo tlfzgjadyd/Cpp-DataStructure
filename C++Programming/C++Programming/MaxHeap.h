@@ -46,7 +46,7 @@ MaxHeap<T>::MaxHeap(int theCapacity)
     if (theCapacity < 1) throw "Capacity must be >= 1.";
     capacity = theCapacity;
     heapSize = 0;
-    heap = new T[capacity + 1]; // heap[0] is not used
+    heap = new T[(long long)capacity + 1]; // heap[0] is not used
 }
 template <class T>
 void MaxHeap<T>::Push(const T& e)
