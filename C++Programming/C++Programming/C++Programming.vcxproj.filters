@@ -58,6 +58,12 @@
     <Filter Include="헤더 파일\과제">
       <UniqueIdentifier>{b922d959-005a-43aa-8da2-a92667d5d75d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\마지막과제">
+      <UniqueIdentifier>{a1423e26-89b6-4bba-ac8e-058e55049798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\마지막과제">
+      <UniqueIdentifier>{1bce9b08-face-42d3-aca7-46c5cae6b9e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -390,6 +396,9 @@
     <ClCompile Include="G_String.cpp">
       <Filter>소스 파일\과제</Filter>
     </ClCompile>
+    <ClCompile Include="Chain.h">
+      <Filter>헤더 파일\마지막과제</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
@@ -481,6 +490,9 @@
     </ClInclude>
     <ClInclude Include="E_String.h">
       <Filter>헤더 파일\과제</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>헤더 파일\마지막과제</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
