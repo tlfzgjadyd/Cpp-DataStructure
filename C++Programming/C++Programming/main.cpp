@@ -47,7 +47,16 @@ int main(void) {
 	maxHeap->print();
 
 	BST<string, int>* bst = new BST<string, int>();
-	bst->Insert(make_pair("a",1));
-	
+	bst->Insert(make_pair("a", 1));
+	bst->Insert(make_pair("b", 2));
+	bst->Insert(make_pair("c", 3));
+	bst->Insert(make_pair("d", 4));
+	bst->Insert(make_pair("e", 5));
+	cout << "key : "<<bst->Get((const string&)("a"))->first << " value : "<<bst->Get((const string &)("a"))->second<<endl;
+	BSTNode<pair<string, int>>* bstNode = new BSTNode<pair<string, int>>(pair<string, int>("b", 2));
+	cout << "key : " << bst->Get((BSTNode<pair<string, int>>*)bstNode, (const string&)("b"))->first << " value : " << bst->Get((BSTNode<pair<string, int>>*)bstNode, (const string&)("b"))->second << endl;
+	cout << "key : " << bst->IterativeGet((const string&)("c"))->first << " value : " << bst->IterativeGet((const string&)("c"))->second << endl;
+	cout << "key : " << bst->RankGet(5)->first << " value : " << bst->RankGet(5)->second << endl;
+	//void Split(const K & k, BST<K, E>&small, pair<K, E>*&mid, BST<K, E>&big);
 	return 0;
 }

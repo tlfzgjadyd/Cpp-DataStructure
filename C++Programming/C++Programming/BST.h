@@ -8,11 +8,11 @@ template <class K, class E>
 class BST {
 public:
     BST();
+    void Insert(const pair<K, E>& thePair);
     pair<K, E>* Get(const K& k);
     pair<K, E>* Get(BSTNode<pair<K, E>>* p, const K& k);
     pair<K, E>* IterativeGet(const K& k);
     pair<K, E>* RankGet(int r);
-    void Insert(const pair<K, E>& thePair);
     void Split(const K& k, BST<K, E>& small, pair<K, E>*& mid, BST<K, E>& big);
 private:
     BSTNode<pair<K, E>>* root;
@@ -54,7 +54,7 @@ template <class K, class E>  // search by rank
 pair<K, E>* BST<K, E>::RankGet(int r)
 {// Search the binary search tree for the rth smallest pair.
     BSTNode<pair<K, E> >* currentNode = root;
-    while (currentNode)
+    while (currentNode) {
         if (r < currentNode->leftSize) currentNode = currentNode->leftChild;
         else if (r > currentNode->leftSize)
         {
@@ -62,6 +62,7 @@ pair<K, E>* BST<K, E>::RankGet(int r)
             currentNode = currentNode->rightChild;
         }
         else return &currentNode->data;
+    }
     return 0;
 }
 template <class K, class E>
@@ -126,11 +127,13 @@ void BST<K, E>::Split(const K& k, BST<K, E>& small,
 template <class T>
 class BSTNode {
 private:
+    int leftSize;//왼쪽 서브트리가 가진 원소수 +1이다
     T data;
     BSTNode<T>* leftChild;
     BSTNode<T>* rightChild;
 public:
     BSTNode(T data) {
+        this->leftSize = 0;
         this->data = data;
         this->leftChild = NULL;
         this->rightChild = NULL;
