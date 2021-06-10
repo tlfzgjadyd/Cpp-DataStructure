@@ -377,6 +377,7 @@
     <ClInclude Include="D_List.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="L_Ram.h" />
+    <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="Mul.h" />
     <ClInclude Include="OrderedList.h" />
     <ClInclude Include="Queue.h" />

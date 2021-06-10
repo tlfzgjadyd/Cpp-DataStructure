@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Chain.h"
 #include "Tree.h"
+#include "MaxHeap.h"
 using namespace std;
 
 int main(void) {
@@ -28,6 +29,21 @@ int main(void) {
 	tree->Preorder();
 	cout << endl;
 	tree->Postorder();
+	cout << endl;
+
+	MaxHeap<int>* maxHeap = new MaxHeap<int>();
+	maxHeap->Push((const int&)1);
+	maxHeap->Push((const int&)2);
+	maxHeap->Push((const int&)3);
+	maxHeap->Push((const int&)4);
+	maxHeap->Push((const int&)5);
+	maxHeap->print();
+	maxHeap->Pop();
+	maxHeap->Pop();
+	maxHeap->Push((const int&)100);
+	maxHeap->Push((const int&)1000);
+	maxHeap->print();
+
 
 	return 0;
 }

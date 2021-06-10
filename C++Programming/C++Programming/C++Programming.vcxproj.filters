@@ -497,5 +497,8 @@
     <ClInclude Include="Chain.h">
       <Filter>헤더 파일\마지막과제</Filter>
     </ClInclude>
+    <ClInclude Include="MaxHeap.h">
+      <Filter>헤더 파일\마지막과제</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
