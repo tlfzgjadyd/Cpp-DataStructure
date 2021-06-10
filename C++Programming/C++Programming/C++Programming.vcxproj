@@ -100,7 +100,6 @@
     <ClCompile Include="B_smallTimeCheck.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Chain.h" />
     <ClCompile Include="C_Account.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -329,6 +328,7 @@
     <ClCompile Include="L_SortedArray.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="M_Histogram.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -357,6 +357,7 @@
     <ClInclude Include="A_Tower.h" />
     <ClInclude Include="B_Date.h" />
     <ClInclude Include="Calculator.h" />
+    <ClInclude Include="Chain.h" />
     <ClInclude Include="ChangeSIze.h" />
     <ClInclude Include="C_Account.h" />
     <ClInclude Include="Div.h" />

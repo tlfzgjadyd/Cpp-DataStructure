@@ -396,8 +396,8 @@
     <ClCompile Include="G_String.cpp">
       <Filter>소스 파일\과제</Filter>
     </ClCompile>
-    <ClCompile Include="Chain.h">
-      <Filter>헤더 파일\마지막과제</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\마지막과제</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -492,6 +492,9 @@
       <Filter>헤더 파일\과제</Filter>
     </ClInclude>
     <ClInclude Include="Tree.h">
+      <Filter>헤더 파일\마지막과제</Filter>
+    </ClInclude>
+    <ClInclude Include="Chain.h">
       <Filter>헤더 파일\마지막과제</Filter>
     </ClInclude>
   </ItemGroup>
