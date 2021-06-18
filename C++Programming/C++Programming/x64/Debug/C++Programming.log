@@ -1,3 +1,2 @@
 ﻿  main.cpp
-C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\main.cpp(60,21): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
-C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\main.cpp(60,21): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  C++Programming.vcxproj -> C:\Users\tlfzg\DataStructure-Cpp\C++Programming\x64\Debug\C++Programming.exe

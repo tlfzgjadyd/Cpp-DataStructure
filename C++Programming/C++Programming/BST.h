@@ -105,9 +105,10 @@ void BST<K, E>::Split(const K& k, BST<K, E>& small, pair<K, E>*& mid, BST<K, E>&
 {// Split the binary search tree with respect to key k.
     if (!root) { small.root = big.root = 0; return; } // empty tree
     // create header nodes for small and big
-    BSTNode<pair<K, E> >* sHead = new BSTNode<pair<K, E> >,
+   // BSTNode<pair<string, int>>* bstNode = new BSTNode<pair<string, int>>(pair<string, int>("b", 2));
+    BSTNode<pair<K, E>>* sHead = new BSTNode<pair<K, E>>(pair<K,E>("", 0)) ,
         * s = sHead,
-        * bHead = new BSTNode<pair<K, E> >,
+        * bHead = new BSTNode<pair<K, E>>(pair<K,E>("", 0)),
         * b = bHead,
         * currentNode = root;
     while (currentNode)
