@@ -13,6 +13,8 @@ public:
     pair<K, E>* Get(BSTNode<pair<K, E>>* p, const K& k);
     pair<K, E>* IterativeGet(const K& k);
     pair<K, E>* RankGet(int r);
+    int VisitCount(BSTNode<pair<K, E>>* currentNode, BSTNode<pair<K, E>>* settingNode);
+    void PostOrderLeftSize(BSTNode<pair<K, E>>* settingNode);
     void Split(const K& k, BST<K, E>& small, pair<K, E>*& mid, BST<K, E>& big);
 private:
     BSTNode<pair<K, E>>* root;
@@ -55,10 +57,10 @@ pair<K, E>* BST<K, E>::RankGet(int r)
 {// Search the binary search tree for the rth smallest pair.
     BSTNode<pair<K, E> >* currentNode = root;
     while (currentNode) {
-        if (r < currentNode->leftSize) currentNode = currentNode->leftChild;
-        else if (r > currentNode->leftSize)
+        if (r < currentNode->getLeftSize()) currentNode = currentNode->leftChild;
+        else if (r > currentNode->getLeftSize())
         {
-            r -= currentNode->leftSize;
+            r -= currentNode->getLeftSize();
             currentNode = currentNode->rightChild;
         }
         else return &currentNode->data;
@@ -79,17 +81,27 @@ void BST<K, E>::Insert(const pair<K, E>& thePair)
             p->data.second = thePair.second; return;
         }
     }
-
     // perform insertion
     p = new BSTNode<pair<K, E>>(thePair);
     if (root)  // tree not empty
-        if (thePair.first < pp->data.first) pp->leftChild = p;
-        else pp->rightChild = p;
-    else root = p;
+    {
+        if (thePair.first < pp->data.first)
+        {
+            pp->leftChild = p;
+            PostOrderLeftSize(pp->leftChild);
+        }
+        else {
+            pp->rightChild = p;
+            PostOrderLeftSize(pp->rightChild);
+        }
+    }
+    else
+    {
+        root = p;//이미 1로 세팅되어있기 때문에 별도로 안해도됨
+    }
 }
 template <class K, class E>
-void BST<K, E>::Split(const K& k, BST<K, E>& small,
-    pair<K, E>*& mid, BST<K, E>& big)
+void BST<K, E>::Split(const K& k, BST<K, E>& small, pair<K, E>*& mid, BST<K, E>& big)
 {// Split the binary search tree with respect to key k.
     if (!root) { small.root = big.root = 0; return; } // empty tree
     // create header nodes for small and big
@@ -124,6 +136,30 @@ void BST<K, E>::Split(const K& k, BST<K, E>& small,
     mid = 0;
     return;
 }
+template <class K, class E>
+int BST<K, E>::VisitCount(BSTNode<pair<K, E>>* currentNode, BSTNode<pair<K, E>>* settingNode)
+{// Workhorse.
+    if (currentNode == settingNode)
+        return -1;
+    else
+    {
+        settingNode->setLeftSize();
+        return 0;
+    }
+}
+template <class K, class E>
+void BST<K, E>::PostOrderLeftSize(BSTNode<pair<K, E>>* settingNode)
+{// Workhorse.
+    BSTNode<pair<K, E>>* currentNode = settingNode;
+    if (currentNode) {
+        PostOrderLeftSize(currentNode->leftChild);
+        PostOrderLeftSize(currentNode->rightChild);
+        int result = VisitCount(currentNode, settingNode);
+        if (result == -1)
+            return;
+    }
+    return;
+}
 template <class T>
 class BSTNode {
 private:
@@ -133,10 +169,18 @@ private:
     BSTNode<T>* rightChild;
 public:
     BSTNode(T data) {
-        this->leftSize = 0;
+        this->leftSize = 1;//미리 1 더해뒀음
         this->data = data;
         this->leftChild = NULL;
         this->rightChild = NULL;
     }
+    int getLeftSize();
+    void setLeftSize() { leftSize++; }
     template <class K, class E> friend class BST;
 };
+
+template <class T>
+int BSTNode<T>::getLeftSize() {
+    return this->leftSize;
+}
+
