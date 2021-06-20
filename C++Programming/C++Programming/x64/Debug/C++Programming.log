@@ -1,3 +1,5 @@
 ﻿  G_Calculator.cpp
-C:\Users\tlfzg\DataStructure-Cpp\C++Programming\C++Programming\G_Calculator.cpp(6,30): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  C++Programming.vcxproj -> C:\Users\tlfzg\DataStructure-Cpp\C++Programming\x64\Debug\C++Programming.exe
+C:\Users\tlfzg\Cpp-DataStructure\C++Programming\C++Programming\List.h(147,21): error C2760: 구문 오류: '<'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '식'입니다.
+  G_Main.cpp
+C:\Users\tlfzg\Cpp-DataStructure\C++Programming\C++Programming\List.h(147,21): error C2760: 구문 오류: '<'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '식'입니다.
+  코드를 생성하고 있습니다...

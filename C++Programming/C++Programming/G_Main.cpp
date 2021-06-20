@@ -13,9 +13,6 @@ int main(void) {
     cout << "수식을 입력하시오 : ";
     cin.getline(expr, 1000);
     //수식세팅, 후위로 변환, 계산까지 완료하는 함수
-    int n1 = 1;
-    int n2 = 2;
-    cout << (char)(n2 - n1 + '0');
     if (!c.setExpression(expr))//여기서 넘어가서 후위표기식 만들고 계산까지 한 상태
     {
         

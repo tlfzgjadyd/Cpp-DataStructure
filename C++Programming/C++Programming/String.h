@@ -31,4 +31,6 @@ public:
 	void print();//스트링 출력
 	ostream& operator<<(ostream& o);
 	char getItem(int i);
+	int Strtoi();
+	char* getBuffer();
 };

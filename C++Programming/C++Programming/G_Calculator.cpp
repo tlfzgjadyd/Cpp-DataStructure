@@ -3,12 +3,11 @@
 using namespace std;
 
 int Calculator::makeTokens(const char* expr) {//들어온 수식을 토큰으로 분리
-    int length = strlen(expr);
+    int length = (int)strlen(expr);
     bool flag = true;//true면 숫자 false면 연산자
     String str;
     for (int i = 0; i < length; i++)
     {
-        cout <<"i : "<< i<<endl;
         //if(expr[i]타입을 파악한다)
             //이전타입이 숫자였을 경우
             //  이번타입이 숫자면
@@ -37,16 +36,18 @@ int Calculator::makeTokens(const char* expr) {//들어온 수식을 토큰으로 분리
         {
             flag = false;
             tokens.addItem(str);
-            tokens.addItem(expr[i]);
+            String s(expr[i]);
+            tokens.addItem(s);
         }
     }
+    tokens.print();
     return 0;
 }
 int Calculator::makePostFix() {// postfix 로 변경하는 함수 : 오류없으면 0 오류있으면 1반환
                                  // 변경결과는 postfix 변수에 저장, 오류시 적절한 코드를 errCode 에 저장 (오류코드는 각자가 정의)
     for (int i = 0; i < tokens.getItemCount(); i++)
     {
-        ;// cout << tokens.getItem(i);
+        cout <<"i : "<<i<<" item: "<< tokens.getItem(i)<<endl;
         //postfix만들었는데 연산자가 있어야하는 양보다 더 많음->errcode=1
         //postfix만들었는데 숫자가 있어야하는 양보다 더 많음->errcode=2
     }
@@ -123,9 +124,7 @@ int Calculator::setExpression(const char* expr) {// expr에 전달된 수식(중위표기�
     makeTokens(expr);
     //2. 후위표기식으로 변환하기
 
-    /*for (int i = 0; i < tokens.getItemCount(); i++)
-        cout << tokens.getItem(i) << endl;
-    */
+    makePostFix();
 
     if (getErrorCode()== 0)//2번에서 에러 안났을 경우에만 evaluation으로 계산시도
     {

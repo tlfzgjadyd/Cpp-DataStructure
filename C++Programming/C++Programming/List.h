@@ -40,8 +40,23 @@ List<T>::~List() {
 }
 template <typename T>
 int List<T>::getItem(int index) {//리스트의 특정 위치에 있는 값을 가져오는 int getItem(int index) 함수 작성  ( index가 범위를 벗어날경우 -99999 반환 )
-    if (index < size && index < itemCount && items[index]!= NULL)
-        return items[index];
+    if (index < itemCount)
+    {
+        bool flag = true;
+        char* ptr = items[index].getBuffer();
+        for (int i = 0; i < items[index].Length(); i++)
+        {
+            if (!isdigit(ptr[i]))
+                flag = false;
+        }
+        if (flag)
+        {
+            cout << (items[index].Strtoi()) << endl;
+            return (items[index].Strtoi());
+        }
+        else
+            return -1;//연산자는 숫자대신 -1을 내보냄
+    }
     else
         return -99999;
 }
@@ -129,7 +144,7 @@ void List<T>::print() {//리스트의 모든 값을 출력하는 print() 함수 구현
     {
         cout << "리스트 출력 : ";
         for (int i = 0; i < itemCount; i++) {
-            cout << items[i] << " ";
+            cout << <items[i] << " ";
         }
         cout << endl;
     }

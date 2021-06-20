@@ -150,3 +150,15 @@ char String::getItem(int i) {
 	else
 		return NULL;
 }
+int String::Strtoi() {
+	int num = 0;
+	for (int i = 0; i < length; i++)
+	{
+		cout << "buffer" << buffer[i] - '0'<<endl;
+		num+=(int)(((int)(buffer[i] - '0'))* pow(10, length - i - 1));
+	}
+	return num;
+}
+char* String::getBuffer() {
+	return buffer;
+}
