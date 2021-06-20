@@ -22,12 +22,6 @@
     <Filter Include="소스 파일\chap03">
       <UniqueIdentifier>{052baf4f-584e-4028-a32a-311f0d7ea302}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\chap03">
-      <UniqueIdentifier>{1963a650-8852-4d13-9faf-3a2c0febf880}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\chap03\J_Calculate">
-      <UniqueIdentifier>{d828e9d2-db9d-440f-a74a-4d0b24610239}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\chap04">
       <UniqueIdentifier>{587badef-03fb-444a-96d3-445a663fa073}</UniqueIdentifier>
     </Filter>
@@ -63,6 +57,12 @@
     </Filter>
     <Filter Include="헤더 파일\마지막과제">
       <UniqueIdentifier>{1bce9b08-face-42d3-aca7-46c5cae6b9e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\chap04\chap03">
+      <UniqueIdentifier>{1963a650-8852-4d13-9faf-3a2c0febf880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\chap04\chap03\J_Calculate">
+      <UniqueIdentifier>{d828e9d2-db9d-440f-a74a-4d0b24610239}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -402,52 +402,52 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A_Tower.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="B_Date.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="C_Account.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="D_CoffeeMachine.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="E_Random.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="F_EvenRandom.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="G_SelectableRandom.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="H_Integer.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="I_Oval.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="Add.h">
-      <Filter>헤더 파일\chap03\J_Calculate</Filter>
+      <Filter>헤더 파일\chap04\chap03\J_Calculate</Filter>
     </ClInclude>
     <ClInclude Include="Div.h">
-      <Filter>헤더 파일\chap03\J_Calculate</Filter>
+      <Filter>헤더 파일\chap04\chap03\J_Calculate</Filter>
     </ClInclude>
     <ClInclude Include="Mul.h">
-      <Filter>헤더 파일\chap03\J_Calculate</Filter>
+      <Filter>헤더 파일\chap04\chap03\J_Calculate</Filter>
     </ClInclude>
     <ClInclude Include="Sub.h">
-      <Filter>헤더 파일\chap03\J_Calculate</Filter>
+      <Filter>헤더 파일\chap04\chap03\J_Calculate</Filter>
     </ClInclude>
     <ClInclude Include="J_Calculate.h">
-      <Filter>헤더 파일\chap03\J_Calculate</Filter>
+      <Filter>헤더 파일\chap04\chap03\J_Calculate</Filter>
     </ClInclude>
     <ClInclude Include="K_Box.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="L_Ram.h">
-      <Filter>헤더 파일\chap03</Filter>
+      <Filter>헤더 파일\chap04\chap03</Filter>
     </ClInclude>
     <ClInclude Include="A_Color.h">
       <Filter>헤더 파일\chap04</Filter>

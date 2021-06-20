@@ -3,11 +3,12 @@
 using namespace std;
 
 int Calculator::makeTokens(const char* expr) {//들어온 수식을 토큰으로 분리
-    int length = String(expr).Length();
+    int length = strlen(expr);
     bool flag = true;//true면 숫자 false면 연산자
-    String str="";
+    String str;
     for (int i = 0; i < length; i++)
     {
+        cout <<"i : "<< i<<endl;
         //if(expr[i]타입을 파악한다)
             //이전타입이 숫자였을 경우
             //  이번타입이 숫자면
@@ -22,9 +23,15 @@ int Calculator::makeTokens(const char* expr) {//들어온 수식을 토큰으로 분리
             flag = true;
             String s(expr[i]);
             str.Concat(s);
-            if(i==length-1)
+            if (i == length - 1)
                 tokens.addItem(str);//평소엔 연산자나올때 넣어주지만 
             //마지막에 나오는 숫자 한번은 반드시 알아서 넣어줘야됨
+        }
+        else if ((65 <= (char)expr[i] && (char)expr[i] <= 90) || (97 <= (char)expr[i] && (char)expr[i] <= 122))
+        {
+            errCode = 4;//알파벳 입력해서 제대로된 입력이 아님
+            cout << "제대로된 입력이 아닙니다";
+            return -1;
         }
         else//이번 문자 타입이 연산자면 flag false
         {
@@ -114,7 +121,6 @@ int Calculator::setExpression(const char* expr) {// expr에 전달된 수식(중위표기�
 
     //1. 일단 분리해서 집어넣기
     makeTokens(expr);
-
     //2. 후위표기식으로 변환하기
 
     /*for (int i = 0; i < tokens.getItemCount(); i++)
@@ -143,10 +149,12 @@ int Calculator::getErrorCode() {// 오류코드 반환
      
 //여기서 변환하는게 아니라 이미 변환된 후위를 돌려줌                                                        
 String Calculator::getPostFix() { // 변환된 후위표기식을 반환   --> 오류가 있을경우 최초값인 공백이 리턴
-    if (getErrorCode()== 0)
-        return postfix; 
+    if (getErrorCode() == 0)
+        ;
     else
-        return "";
+        postfix.DeepCopy("", 0);
+
+    return postfix;
 }           
 
 //여기서 계산하는게 아니라 이미 계산된 결과값을 돌려줌   

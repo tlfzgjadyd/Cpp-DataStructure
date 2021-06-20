@@ -16,11 +16,11 @@ int main(void) {
     int n1 = 1;
     int n2 = 2;
     cout << (char)(n2 - n1 + '0');
-    if (!c.setExpression(expr))
+    if (!c.setExpression(expr))//여기서 넘어가서 후위표기식 만들고 계산까지 한 상태
     {
-        /*
+        
         //여기서 변환하는게 아니라 이미 변환돼있는 후위를 가져옴
-        String postfix = c.getPostFix();
+        /*String postfix = c.getPostFix();
         try {//여기서 결과값 계산하는게 아니라 이미 계산돼있는 결과값을 가져옴
             cout << "후위표기식 : " << postfix << "결과값 : " << c.getValue() << endl;
         }
