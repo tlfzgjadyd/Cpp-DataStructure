@@ -52,12 +52,11 @@ int main(void) {
 			cout << "======================================" << endl;
 			cout <<"A. "<<answer[num] << endl;
 			cout << "======================================" << endl << endl << endl;
-			//있으면 문제가 깔끔하게 나오긴 하는데 연속적으로 문제를 풀려면 없는게 나을때도 있어서 막아둠
-			/*select = (int)getchar();
+			select = (int)getchar();
 			if (!isDayPractice(select))
 				;
 			else
-				doDayPractice(select - 48, menu, answer, start, end);*/ 
+				doDayPractice(select - 48, menu, answer, start, end);
 		}
 		else
 			doDayPractice(select-48, menu, answer, start, end);
@@ -90,9 +89,8 @@ void doDayPractice(int day, string* menu, string* answer, int* start, int* end) 
 		cout << "======================================" << endl;
 		cout << "A. " << answer[i] << endl;
 		cout << "======================================" << endl << endl;
-		//있으면 문제가 깔끔하게 나오긴 하는데 연속적으로 문제를 풀려면 없는게 나을때도 있어서 막아둠
-		/*if (isQuit(getchar()))
-			break;*/
+		if (isQuit(getchar()))
+			break;
 	}
 	cout <<"<<<<< "<< day <<"일차 학습이 끝났습니다" <<" >>>>>"<< endl << endl << endl;
 	getchar();
