@@ -352,7 +352,7 @@
     <ClCompile Include="P_alphabet.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="카페음료.cpp" />
+    <ClCompile Include="cafeQuizGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Add.h" />

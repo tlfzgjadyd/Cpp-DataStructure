@@ -402,7 +402,7 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\마지막과제</Filter>
     </ClCompile>
-    <ClCompile Include="카페음료.cpp">
+    <ClCompile Include="cafeQuizGenerator.cpp">
       <Filter>소스 파일\카페</Filter>
     </ClCompile>
   </ItemGroup>
