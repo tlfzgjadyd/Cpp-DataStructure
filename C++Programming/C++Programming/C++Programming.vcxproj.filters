@@ -64,6 +64,9 @@
     <Filter Include="헤더 파일\chap04\chap03\J_Calculate">
       <UniqueIdentifier>{d828e9d2-db9d-440f-a74a-4d0b24610239}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\카페">
+      <UniqueIdentifier>{f4e1a55c-ebeb-464a-9c28-fc96aed2d852}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A_name.cpp">
@@ -398,6 +401,9 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\마지막과제</Filter>
+    </ClCompile>
+    <ClCompile Include="카페음료.cpp">
+      <Filter>소스 파일\카페</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

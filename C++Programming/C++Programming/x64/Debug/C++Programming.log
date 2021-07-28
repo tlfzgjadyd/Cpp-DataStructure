@@ -1,5 +1,2 @@
-﻿  G_Calculator.cpp
-C:\Users\tlfzg\Cpp-DataStructure\C++Programming\C++Programming\List.h(147,21): error C2760: 구문 오류: '<'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '식'입니다.
-  G_Main.cpp
-C:\Users\tlfzg\Cpp-DataStructure\C++Programming\C++Programming\List.h(147,21): error C2760: 구문 오류: '<'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '식'입니다.
-  코드를 생성하고 있습니다...
+﻿  카페음료.cpp
+  C++Programming.vcxproj -> C:\Users\tlfzg\Cpp-DataStructure\C++Programming\x64\Debug\C++Programming.exe
