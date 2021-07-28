@@ -39,7 +39,7 @@ int main(void) {
 	int end[MAX_DAY_NUM] = {23, 4, 6};
 	random_device r;
 	mt19937 gen(r());
-	uniform_int_distribution<int> dis(0, 6);
+	uniform_int_distribution<int> dis(0, MAX_MENU_NUM-1);
 	int num = 0;
 	char select =' ';
 	bool retry = false;
